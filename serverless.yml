@@ -1,0 +1,35 @@
+service: serverless-memory-strands-agent
+frameworkVersion: '3'
+
+## Use .env
+useDotenv: true
+
+## Package individually each function
+package:
+  individually: true
+
+## Apply plugins
+plugins:
+  - serverless-python-requirements #install python requirements
+
+## Define provider and globals
+provider:
+  name: aws
+  runtime: python3.12
+
+## Define atomic functions
+functions:
+  ## Memory function
+  memory:
+    handler: src/agent/memory/handler.memory #function handler
+    url: true
+    package: #package patterns
+      include:
+        - "!**/*"
+        - src/agent/memory/**
+
+
+
+
+
+

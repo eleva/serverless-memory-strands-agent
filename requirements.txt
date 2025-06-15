@@ -1,0 +1,6 @@
+strands-agents==0.1.6
+strands-agents-tools
+mem0ai
+boto3 
+opensearch-py
+python-dotenv

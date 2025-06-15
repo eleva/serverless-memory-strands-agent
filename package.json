@@ -1,0 +1,10 @@
+{
+  "name": "serverless-memory-strands-agent",
+  "version": "1.0.0",
+  "author": "d.desio@eleva.it",
+  "license": "ISC",
+  "description": "serverless-memory-strands-agent",
+  "devDependencies": {
+    "serverless-python-requirements": "^5.1.1"
+  }
+}

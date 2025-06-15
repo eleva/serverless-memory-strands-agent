@@ -10,4 +10,4 @@ __pycache__/
 # Python virtual environments
 .venv
 # Environment variables
-.env.dist
+.env

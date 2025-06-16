@@ -16,6 +16,8 @@ plugins:
 provider:
   name: aws
   runtime: python3.12
+  environment:
+    MEM0_API_KEY: ${env:MEM0_API_KEY} #API key for Mem0
 
 ## Define atomic functions
 functions:
